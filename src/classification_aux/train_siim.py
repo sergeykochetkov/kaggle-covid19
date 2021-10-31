@@ -82,8 +82,10 @@ if __name__ == "__main__":
             decoder_channels=cfg['decoder_channels'],
             encoder_pretrained_path=None,
             encoder_pretrained_num_classes=None,
-            model_pretrained_path=None,
-            model_pretrained_num_classes=None)
+            model_pretrained_path='rsnapneu_pretrain/{}_{}_{}_rsnapneu.pth'.format(cfg['encoder_name'],
+                                                                                   cfg['aux_image_size'],
+                                                                                   cfg['decoder']),
+            model_pretrained_num_classes=len(rsnapneumonia_classes))
 
         model_ema = ModelEmaV2(model, decay=cfg['model_ema_decay'], device=device)
         if torch.cuda.device_count() > 1:
