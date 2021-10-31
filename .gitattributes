@@ -1,2 +1,4 @@
 src/classification_aux/rsnapneu_pretrain/timm-efficientnet-b3_384_deeplabv3plus_rsnapneu.pth filter=lfs diff=lfs merge=lfs -text
 src/classification_aux/rsnapneu_pretrain/timm-efficientnet-b3_384_deeplabv3plus_rsnapneu.pth_src filter=lfs diff=lfs merge=lfs -text
+classification_aux/chexpert_chest14_pretrain/timm-efficientnet-b3_384_pretrain_step0.pth filter=lfs diff=lfs merge=lfs -text
+src/classification_aux/chexpert_chest14_pretrain/timm-efficientnet-b3_384_pretrain_step0.pth filter=lfs diff=lfs merge=lfs -text
