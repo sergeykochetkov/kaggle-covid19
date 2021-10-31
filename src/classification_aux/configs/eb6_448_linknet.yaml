@@ -4,12 +4,12 @@ in_features: 2304
 workers: 16
 
 chexpert_image_size: 512
-chexpert_batch_size: 20
+chexpert_batch_size: 7
 chexpert_init_lr: 0.00015
 chexpert_epochs: 10
 
 chest14_image_size: 512
-chest14_batch_size: 20
+chest14_batch_size: 7
 chest14_init_lr: 0.0001
 chest14_epochs: 15
 

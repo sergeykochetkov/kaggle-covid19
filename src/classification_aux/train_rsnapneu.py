@@ -82,6 +82,10 @@ if __name__ == "__main__":
         model_pretrained_path=None, 
         model_pretrained_num_classes=None)
 
+    if torch.cuda.device_count() > 1:
+        print("Let's use", torch.cuda.device_count(), "GPUs!")
+        model = nn.DataParallel(model)
+
     model.to(device)
 
     cls_criterion = nn.BCEWithLogitsLoss()

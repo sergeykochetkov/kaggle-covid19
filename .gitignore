@@ -20,4 +20,6 @@ src/detection_efffdet/checkpoints*
 src/detection_fasterrcnn/checkpoints*
 src/detection_fasterrcnn/*pretrain*
 src/detection_lung_yolov5/runs*
-src/detection_yolov5/runs*
+src/detection_yolov5/runs***/__pycache__/
+src/classification_aux/__pycache__/
+__pycache__
