@@ -2,6 +2,8 @@
 
 #download https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
 
+#sudo mkdir /root/.kaggle
+#sudo cp kaggle.json /root/.kaggle
 
 '''
 SSH server: 193.106.172.198
@@ -15,3 +17,11 @@ pip install -r requirements.txt
 pip install git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
 pip install git+https://github.com/bes-dev/mean_average_precision.git@930df3618c924b694292cc125114bad7c7f3097e
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c nvidia -y
+
+mkdir /home/administrator/.kaggle
+cp kaggle.json /home/administrator/.kaggle
+pip install kaggle
+
+cd dataset
+
+kaggle competitions download -c siim-covid19-detection
