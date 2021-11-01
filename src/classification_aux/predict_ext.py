@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("--cfg", default='configs/seresnet152d_512_unet.yaml', type=str)
 parser.add_argument("--folds", default=[0,1,2,3,4], nargs="+", type=int)
-parser.add_argument("--sources", default=['padchest', 'pneumothorax', 'vin'], nargs="+", type=str)
+parser.add_argument("--sources", default=['pneumothorax', 'vin'], nargs="+", type=str)
 parser.add_argument("--batch-size", default=8, type=int)
 parser.add_argument("--workers", default=16, type=int)
 parser.add_argument("--frac", default=1.0, type=float)
@@ -54,9 +54,7 @@ if __name__ == "__main__":
         models[fold].eval()
 
     for source in args.sources:
-        if source == 'padchest':
-            test_df = pd.read_csv('../../dataset/external_dataset/ext_csv/padchest.csv')
-        elif source == 'pneumothorax':
+        if source == 'pneumothorax':
             test_df = pd.read_csv('../../dataset/external_dataset/ext_csv/pneumothorax.csv')
         elif source == 'vin':
             test_df = pd.read_csv('../../dataset/external_dataset/ext_csv/vin.csv')
