@@ -192,7 +192,9 @@ if __name__ == "__main__":
             val_loss_min = val_loss
             best_epoch = epoch
             count = 0
-            torch.save(model.state_dict(), CHECKPOINT)
+            state_dict = model.state_dict()
+            state_dict = {k.replace('module.', ''): v for k, v in state_dict.items()}
+            torch.save(state_dict, CHECKPOINT)
         else:
             count += 1
         
