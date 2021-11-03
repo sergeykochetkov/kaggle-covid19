@@ -24,16 +24,21 @@ Username: root
 Password: 8kTiKM1K&xx55%*
 '''
 
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-./aws/install
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"  &&
+unzip awscliv2.zip  &&
+./aws/install  &&
 
-conda create -n covid19 python=3.7.9 -y
-conda activate covid19
-conda install -c conda-forge gdcm -y
-pip install -r requirements.txt
-pip install git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
-pip install git+https://github.com/bes-dev/mean_average_precision.git@930df3618c924b694292cc125114bad7c7f3097e
-conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c nvidia -y
+apt-get install ffmpeg libsm6 libxext6  -y  &&
+
+conda create -n covid19 python=3.7.9 -y &&
+conda activate covid19 &&
+conda install -c conda-forge gdcm -y &&
+pip install -r requirements.txt &&
+pip install git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git &&
+pip install git+https://github.com/bes-dev/mean_average_precision.git@930df3618c924b694292cc125114bad7c7f3097e &&
+conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c nvidia -y &&
+
+pip install git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git &&
+pip install git+https://github.com/bes-dev/mean_average_precision.git@930df3618c924b694292cc125114bad7c7f3097e &&
 
 aws configure
