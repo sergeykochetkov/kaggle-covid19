@@ -4,6 +4,11 @@
 
 #sudo mkdir /root/.kaggle
 #sudo cp kaggle.json /root/.kaggle
+'''
+git clone https://github.com/sergeykochetkov/kaggle-covid19.git
+
+cd kaggle-covid19
+'''
 
 '''
 SSH server: 193.106.172.198
@@ -22,6 +27,4 @@ mkdir /home/administrator/.kaggle
 cp kaggle.json /home/administrator/.kaggle
 pip install kaggle
 
-cd dataset
-
-kaggle competitions download -c siim-covid19-detection
+./download_datasets.sh

@@ -2,7 +2,7 @@
 
 ./unittest_train.sh
 
-./generate_pseudo_label.sh
+./generate_pseudo_label.sh checkpoints false
 
 if [ $? -eq 0 ]
 then
