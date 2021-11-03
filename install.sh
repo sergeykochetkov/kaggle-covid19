@@ -13,6 +13,9 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
 
 git clone https://github.com/sergeykochetkov/kaggle-covid19.git
 cd kaggle-covid19
+
+git config --global user.email sergeykochetkov@yandex.ru
+git config --global user.name sergeykochetkov_rent
 '''
 
 '''

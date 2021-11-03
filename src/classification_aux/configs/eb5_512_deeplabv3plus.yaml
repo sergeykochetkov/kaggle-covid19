@@ -4,17 +4,17 @@ in_features: 2048
 workers: 16
 
 chexpert_image_size: 512
-chexpert_batch_size: 8
+chexpert_batch_size: 28
 chexpert_init_lr: 0.00015
-chexpert_epochs: 1
+chexpert_epochs: 10
 
 chest14_image_size: 512
-chest14_batch_size: 8
+chest14_batch_size: 28
 chest14_init_lr: 0.0001
-chest14_epochs: 2
+chest14_epochs: 15
 
 aux_image_size: 512
-aux_batch_size: 9
+aux_batch_size: 18
 aux_init_lr: 0.0001
 aux_epochs: 30
 decoder: 'deeplabv3plus'
