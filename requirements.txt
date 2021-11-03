@@ -42,7 +42,7 @@ MarkupSafe==2.0.1
 matplotlib==3.4.2
 matplotlib-inline==0.1.2
 mistune==0.8.4
-mkl-fft==1.3.0
+mkl-fft
 mkl-random
 mkl-service==2.3.0
 munch==2.5.0
@@ -65,7 +65,7 @@ parso==0.8.2
 pexpect==4.8.0
 pickleshare==0.7.5
 Pillow
-pretrainedmodels==0.7.4
+pretrainedmodels
 prometheus-client==0.11.0
 prompt-toolkit==3.0.18
 protobuf==3.17.2
@@ -118,3 +118,4 @@ omegaconf==2.0.6
 pycocotools
 imagehash
 lxml==4.6.3
+pyyaml
