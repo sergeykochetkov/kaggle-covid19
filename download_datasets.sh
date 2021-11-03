@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$BUCKET=s3://kochetkov-kaggle-covid19
+BUCKET=s3://kochetkov-kaggle-covid19
 
 cd dataset
 aws s3 cp $BUCKET/siim-covid19-detection.zip .
