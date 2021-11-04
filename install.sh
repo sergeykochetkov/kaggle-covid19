@@ -28,6 +28,10 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 unzip awscliv2.zip  &&
 ./aws/install  &&
 
+apt-get install git-lfs &&
+
+git lfs install &&
+
 apt-get install ffmpeg libsm6 libxext6  -y  &&
 
 conda create -n covid19 python=3.7.9 -y &&
