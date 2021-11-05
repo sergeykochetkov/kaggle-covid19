@@ -6,17 +6,26 @@
 #sudo cp kaggle.json /root/.kaggle
 '''
 
-apt-get update
-apt-get install git -y
-apt-get install wget -y
-wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh
+apt-get update &&
+apt-get install git -y &&
 
-git clone https://github.com/sergeykochetkov/kaggle-covid19.git
-cd kaggle-covid19
+apt-get install wget -y &&
+wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh &&
+chmod +x Miniconda3-py39_4.10.3-Linux-x86_64.sh &&
+./Miniconda3-py39_4.10.3-Linux-x86_64.sh &&
+conda create -n covid19 python=3.7.9 -y &&
+conda activate covid19 &&
 
-git config --global user.email sergeykochetkov@yandex.ru
+git clone https://github.com/sergeykochetkov/kaggle-covid19.git &&
+cd kaggle-covid19 &&
+
+git config --global user.email sergeykochetkov@yandex.ru &&
 git config --global user.name sergeykochetkov_rent
+
+
+
 '''
+
 
 '''
 SSH server: 193.106.172.198
@@ -34,8 +43,6 @@ git lfs install &&
 
 apt-get install ffmpeg libsm6 libxext6  -y  &&
 
-conda create -n covid19 python=3.7.9 -y &&
-conda activate covid19 &&
 conda install -c conda-forge gdcm -y &&
 pip install -r requirements.txt &&
 pip install git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git &&
