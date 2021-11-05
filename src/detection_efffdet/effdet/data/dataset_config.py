@@ -114,7 +114,7 @@ class WarmupCfg:
     variant: str = None
     parser: str = 'warmup'
     num_classes: int = 1
-    img_filename: str = '%s.png'
+    img_filename: str = '%s.jpg'
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(
             split_filename=[
@@ -161,7 +161,7 @@ class XrayCfgFold0:
     variant: str = None
     parser: str = 'xray'
     num_classes: int = 1
-    img_filename: str = '%s.png'
+    img_filename: str = '%s.jpg'
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(
             split_filename=['siim-covid19-detection/folds/effdet_train_fold0.txt'],
@@ -178,7 +178,7 @@ class XrayCfgFold1:
     variant: str = None
     parser: str = 'xray'
     num_classes: int = 1
-    img_filename: str = '%s.png'
+    img_filename: str = '%s.jpg'
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(
             split_filename=['siim-covid19-detection/folds/effdet_train_fold1.txt'],
@@ -195,7 +195,7 @@ class XrayCfgFold2:
     variant: str = None
     parser: str = 'xray'
     num_classes: int = 1
-    img_filename: str = '%s.png'
+    img_filename: str = '%s.jpg'
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(
             split_filename=['siim-covid19-detection/folds/effdet_train_fold2.txt'],
@@ -212,7 +212,7 @@ class XrayCfgFold3:
     variant: str = None
     parser: str = 'xray'
     num_classes: int = 1
-    img_filename: str = '%s.png'
+    img_filename: str = '%s.jpg'
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(
             split_filename=['siim-covid19-detection/folds/effdet_train_fold3.txt'],
@@ -229,7 +229,7 @@ class XrayCfgFold4:
     variant: str = None
     parser: str = 'xray'
     num_classes: int = 1
-    img_filename: str = '%s.png'
+    img_filename: str = '%s.jpg'
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(
             split_filename=['siim-covid19-detection/folds/effdet_train_fold4.txt'],
