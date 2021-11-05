@@ -1,0 +1,4 @@
+checkpoints/resnet200d_768_fold0.pth filter=lfs diff=lfs merge=lfs -text
+pretrain/resnet200d_512_pretrain_step1.pth filter=lfs diff=lfs merge=lfs -text
+pretrain/resnet200d_512_pretrain_step0.pth filter=lfs diff=lfs merge=lfs -text
+rsnapneu_pretrain/resnet200d_768_rsnapneu.pth filter=lfs diff=lfs merge=lfs -text
