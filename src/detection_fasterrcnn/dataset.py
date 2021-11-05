@@ -248,7 +248,7 @@ class SiimCovidAuxDataset(Dataset):
         return len(self.df)
 
     def __getitem__(self, index):
-        img_path = '{}/{}.png'.format(self.images_dir, self.df.loc[index, 'imageid'])
+        img_path = '{}/{}.jpg'.format(self.images_dir, self.df.loc[index, 'imageid'])
         image = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
         image = np.stack([image, image, image], axis=-1)
 
@@ -320,7 +320,7 @@ class SiimCovidCLSTestDataset(Dataset):
         return len(self.df)
 
     def __getitem__(self, index):
-        img_path = '{}/{}.png'.format(self.images_dir, self.df.loc[index, 'imageid'])
+        img_path = '{}/{}.jpg'.format(self.images_dir, self.df.loc[index, 'imageid'])
         image = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
         height, width = image.shape[0:2]
         image = np.stack([image, image, image], axis=-1)
