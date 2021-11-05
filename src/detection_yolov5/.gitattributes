@@ -1,3 +1,5 @@
 runs/train/rsnapneu/weights/best.pt filter=lfs diff=lfs merge=lfs -text
 runs/train/rsnapneu/weights/last.pt filter=lfs diff=lfs merge=lfs -text
 weights/yolov5x6.pt filter=lfs diff=lfs merge=lfs -text
+runs/train/fold04/weights/best.pt filter=lfs diff=lfs merge=lfs -text
+runs/train/fold04/weights/last.pt filter=lfs diff=lfs merge=lfs -text
