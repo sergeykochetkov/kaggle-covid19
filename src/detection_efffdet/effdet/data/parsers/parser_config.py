@@ -35,7 +35,7 @@ class VocParserCfg:
 class XrayParserCfg:
     split_filename: str
     ann_filename: str
-    img_filename: str = '%.png'
+    img_filename: str = '%.jpg'
     keep_difficult: bool = True
     classes: list = None
     add_background: bool = True
