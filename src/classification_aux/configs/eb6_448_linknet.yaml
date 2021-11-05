@@ -14,7 +14,7 @@ chest14_init_lr: 0.0001
 chest14_epochs: 15
 
 aux_image_size: 448
-aux_batch_size: 48
+aux_batch_size: 36
 aux_init_lr: 0.0001
 aux_epochs: 30
 decoder: 'linknet'

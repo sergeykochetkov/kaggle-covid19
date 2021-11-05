@@ -1,4 +1,7 @@
 chexpert_chest14_pretrain/timm-efficientnet-b5_512_pretrain_step0.pth filter=lfs diff=lfs merge=lfs -text
 chexpert_chest14_pretrain/timm-efficientnet-b5_512_pretrain_step1.pth filter=lfs diff=lfs merge=lfs -text
 rsnapneu_pretrain/timm-efficientnet-b5_512_deeplabv3plus_rsnapneu.pth filter=lfs diff=lfs merge=lfs -text
-checkpoints/timm-efficientnet-b5_512_deeplabv3plus_aux_fold0.pth filter=lfs diff=lfs merge=lfs -text
+chexpert_chest14_pretrain/timm-efficientnet-b6_512_pretrain_step0.pth filter=lfs diff=lfs merge=lfs -text
+chexpert_chest14_pretrain/timm-efficientnet-b6_512_pretrain_step1.pth filter=lfs diff=lfs merge=lfs -text
+rsnapneu_pretrain/timm-efficientnet-b6_448_linknet_rsnapneu.pth filter=lfs diff=lfs merge=lfs -text
+checkpoints/timm-efficientnet-b6_448_linknet_aux_fold0.pth filter=lfs diff=lfs merge=lfs -text
