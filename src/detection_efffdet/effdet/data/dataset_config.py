@@ -97,7 +97,7 @@ class RSNAPneuCfg:
     variant: str = None
     parser: str = 'rsnapneu'
     num_classes: int = 1
-    img_filename: str = '%s.png'
+    img_filename: str = '%s.jpg'
     splits: Dict[str, dict] = field(default_factory=lambda: dict(
         train=dict(
             split_filename=['external_dataset/ext_csv/rsna_pneumonia_effdet_train.txt'],
