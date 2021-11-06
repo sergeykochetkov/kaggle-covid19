@@ -12,7 +12,10 @@ apt-get install git -y &&
 apt-get install wget -y &&
 wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_64.sh &&
 chmod +x Miniconda3-py39_4.10.3-Linux-x86_64.sh &&
-./Miniconda3-py39_4.10.3-Linux-x86_64.sh &&
+./Miniconda3-py39_4.10.3-Linux-x86_64.sh
+
+---------------------
+
 conda create -n covid19 python=3.7.9 -y &&
 conda activate covid19 &&
 

@@ -8,12 +8,13 @@ is_full=${2:-true}
 
 if $is_full
 then
-cfg1=eb5_512_deeplabv3plus.yaml
-cfg2=eb6_448_linknet.yaml
-cfg3=eb7_512_unetplusplus.yaml
-cfg4=seresnet152d_512_unet.yaml
-cfgs=( $cfg1 $cfg2 $cfg3 $cfg4 )
-folds=0 1 2 3 4
+cfg2=configs/eb5_512_deeplabv3plus.yaml
+cfg1=configs/eb6_448_linknet.yaml
+#cfg3=configs/eb7_512_unetplusplus.yaml
+#cfg4=configs/seresnet152d_512_unet.yaml
+#cfgs=( $cfg1 $cfg2 $cfg3 $cfg4 )
+cfgs=( $cfg1 $cfg2 )
+folds="0"
 else
 cfg1=configs/unittest_eb3_128_deeplabv3plus.yaml
 cfgs=( $cfg1 $cfg1 )

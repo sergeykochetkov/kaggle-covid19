@@ -61,6 +61,7 @@ if __name__ == "__main__":
             model_pretrained_path=None,
             model_pretrained_num_classes=None,
             test_mode=True).cuda()
+        print(f' load ckpt {CHECKPOINT}')
         models[fold].load_state_dict(torch.load(CHECKPOINT))
         models[fold].eval()
 
